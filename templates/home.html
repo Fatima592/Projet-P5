@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="ui input">
+  <input type="text" placeholder="Marque...">
+</div>
+
+<div class="ui input">
+  <input type="text" placeholder="Modèle...">
+</div>
+
+<div class="ui checkbox">
+  <input type="checkbox" name="example">
+  <label>Plus de 1000 km</label>
+</div>
+
+<div class="ui checkbox">
+  <input type="checkbox" name="example">
+  <label>Plus de 20000 km</label>
+</div>
+
+<button class="ui button primary">Valider</button>
+
+<table class="ui celled table">
+  <thead>
+    <tr><th>Marque</th>
+    <th>Modèle</th>
+    <th>Couleur</th>
+    <th>Année</th>
+    <th>Kilometrage</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td data-label="Marque">Renault</td>
+      <td data-label="Model">Zoe</td>
+      <td data-label="Color">Gray</td>
+      <td data-label="Year">2014</td>
+      <td data-label="Km">12000</td>
+    </tr>
+    <tr>
+      <td data-label="Marque">Renault</td>
+      <td data-label="Model">Zoe</td>
+      <td data-label="Color">Gray</td>
+      <td data-label="Year">2014</td>
+      <td data-label="Km">12000</td>
+    </tr>
+    <tr>
+      <td data-label="Marque">Renault</td>
+      <td data-label="Model">Zoe</td>
+      <td data-label="Color">Gray</td>
+      <td data-label="Year">2014</td>
+      <td data-label="Km">12000</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}
